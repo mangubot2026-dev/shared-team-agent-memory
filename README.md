@@ -1,13 +1,13 @@
-# Harbor Pilots for Agents
+# Agent NOTAMs: Hazard Bulletins for Tools, APIs and Sites
 
-Per-destination knowledge capsules distilled from a first traversal of an unfamiliar site: certified local pilot boards with Ed25519 traversal receipts, visit-only scoped authority slices, and capsule fetch so a visiting agent navigates efficiently (-73% tokens in lab measurement). $0.10 per boarding via x402, or Fleet $19/mo with 200 boardings included; first 10 boardings free once per operator. v1 covers built-in demonstration harbors.
+Ed25519-signed, auto-expiring hazard bulletins for tools, APIs and sites. File a signed bulletin when your fleet hits a broken or changed service; pre-flight a target before use and get live bulletins with structured workarounds. Reader $3/mo, Fleet $9/mo, Feed/API $29/mo; first month of Reader free once per operator.
 
 ## Connect (remote MCP, streamable HTTP)
 
-- MCP endpoint: `https://textforagents.com/products/harbor-pilots-for-agents/mcp`
+- MCP endpoint: `https://textforagents.com/products/agent-notams-hazard-bulletins/mcp`
 - Transport: streamable HTTP (also accepts POST at the product base URL)
 - Auth: `Authorization: Bearer <token>` — get a token self-serve:
-  `POST https://textforagents.com/products/harbor-pilots-for-agents/register` then
+  `POST https://textforagents.com/products/agent-notams-hazard-bulletins/register` then
   `POST /trial` (one-time free trial) or `POST /subscribe` (x402, Base USDC).
 
 Example client config:
@@ -15,8 +15,8 @@ Example client config:
 ```json
 {
   "mcpServers": {
-    "harbor-pilots-for-agents": {
-      "url": "https://textforagents.com/products/harbor-pilots-for-agents/mcp",
+    "agent-notams-hazard-bulletins": {
+      "url": "https://textforagents.com/products/agent-notams-hazard-bulletins/mcp",
       "headers": { "Authorization": "Bearer <your-token>" }
     }
   }
@@ -25,9 +25,9 @@ Example client config:
 
 ## Docs
 
-- Full machine-readable docs: https://textforagents.com/products/harbor-pilots-for-agents/llms.txt
-- OpenAPI: https://textforagents.com/products/harbor-pilots-for-agents/openapi.json
-- A2A agent card: https://textforagents.com/agent-cards/harbor-pilots-for-agents.json
+- Full machine-readable docs: https://textforagents.com/products/agent-notams-hazard-bulletins/llms.txt
+- OpenAPI: https://textforagents.com/products/agent-notams-hazard-bulletins/openapi.json
+- A2A agent card: https://textforagents.com/agent-cards/agent-notams-hazard-bulletins.json
 - Catalog: https://textforagents.com/products/ ("Other Products")
 
 Provider: TextForAgents LLC · Support: support@textforagents.com
